@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap');
+:root{
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --color-heading: #393542;
+    --color-paragraph: #38363d;
+    --color-secondary: #878991;
+    --color-nav: #cfcfd8;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-roboto);
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5{
+    font-family: var(--font-open-sans);
+    color: var(--color-heading);
+    margin-top: 0;
+    font-weight: 400;
+}
+p{
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    color: var(--color-paragraph);
+}
+a{
+    text-decoration: none!important;
+    color: var(--color-paragraph);
+    margin-bottom: 0;
+}
+a:focus,
+button:focus{
+    outline: none;
+}
+    /*Reuseable components  */
+.img{
+    max-width: 100%;
+    transition: all .3s ease-out 0s;
+}
+.f-right{
+    float: right;
+}
+.f-left{
+    float: left;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.button{
+    transition: all .3s ease-out 0s;
+}
+.pt-40{
+    padding-top: 40px;
+}
+.pb-40{
+    padding-bottom: 40px;
+}
+/* HEADER */
+.transparent-header{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.main-menu ul li {
+	display: inline-block;
+	margin: 0 15px;
+}
+.main-menu ul li a {
+	color: white;
+	font-weight: 700;
+	display: list-item;
+	font-size: 18px;
+	padding: 20px 0;
+	line-height: 1;
+}
+.header-area .btn{
+    background-color: #6c5edf;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 20px; 
+}
